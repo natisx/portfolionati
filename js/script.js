@@ -2,8 +2,6 @@
 // PORTFOLIO NATALIA - PROJECT DATA, MEDIA SLIDER & POPUP LOGIC
 // ==========================================================================
 
-// ✏️ INSTRUCTIE: Gebruik 'media: [...]' om meerdere foto's of video's toe te voegen per project.
-// Ondersteunt afb. (.jpg/.png), video's (.mp4) en YouTube/Vimeo embed links.
 const projectsData = {
     "1": {
         title: "PearUp",
@@ -63,6 +61,10 @@ let currentMediaIndex = 0;
 let currentAboutIndex = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Jaar dynamisch instellen in footer
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     // Project Modal Elementen
     const projectModal = document.getElementById("project-modal");
     const closeProjectBtn = projectModal ? projectModal.querySelector(".close-btn") : null;
