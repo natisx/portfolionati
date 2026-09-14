@@ -21,6 +21,7 @@ const projectsData = {
         category: "ruimtelijk vormgeving",
         media: [
             "img/procesboek.jpg"
+            "img/procesboek.pdf"
         ],
         description: "dit is een procesboek van een project waar ik een patroon kreeg toegewezen en moest daarvan iets nieuws creeeren en naar 3d omzetten",
         tools: "procreate"
