@@ -21,18 +21,19 @@
         <div class="tagline">Mediavormgeven &bull; GLR</div>
     </header>
 
-    <!-- HERO SECTIE MET PROFIELFOTO -->
+    <!-- HERO SECTIE MET PROFIELFOTO & WOLKJE -->
     <section class="hero">
         <div class="hero-container">
-            <!-- Profielfoto -->
-            <div class="hero-image-wrapper">
+            <!-- Profielfoto met Wolkje -->
+            <div class="hero-image-wrapper" id="profile-trigger">
                 <img src="img/natalia.jpg" alt="Natalia — Mediavormgever" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+                <div class="speech-bubble">Klik op mij! ✨</div>
             </div>
 
             <!-- Introductie Tekst -->
             <div class="hero-text">
-                <div class="hero-subtitle">Welkom in mijn creatieve archief</div>
-                <h1>mijn <br><span class="highlight">portfolio</span>
+                <div class="hero-subtitle">Mijn Portfolio</div>
+                <h1>mij &amp; <br><span class="highlight">portfolio</span> Design</h1>
                 <p>Ik ben Natalia, student Mediavormgeven aan het Grafisch Lyceum Rotterdam. Ik breng verhalen tot leven met sterke typografie, rijke visuele identiteiten en doordacht digitaal &amp; print ontwerp.</p>
                 <div class="badge">📍 Grafisch Lyceum Rotterdam</div>
             </div>
@@ -61,12 +62,49 @@
             <button class="close-btn" aria-label="Sluit pop-up">&times;</button>
             <div class="modal-tag" id="modal-category">Categorie</div>
             <h2 class="modal-title" id="modal-title">Project Titel</h2>
-            <img class="modal-img" id="modal-img" src="" alt="Project Afbeelding">
+            
+            <!-- MEDIA SLIDER WRAPPER (FOTO'S & VIDEO'S) -->
+            <div class="modal-slider">
+                <button class="slider-btn prev-btn" id="slider-prev" aria-label="Vorige media">&#10094;</button>
+                <div class="modal-media-wrapper" id="modal-media-container"></div>
+                <button class="slider-btn next-btn" id="slider-next" aria-label="Volgende media">&#10095;</button>
+                <div class="slider-counter" id="slider-counter">1 / 1</div>
+            </div>
+
             <div class="modal-body">
                 <p id="modal-desc">Project omschrijving...</p>
                 <div class="tools-container">
                     <strong>🛠️ Gebruikte Tools:</strong>
                     <span id="modal-tools">Figma, Photoshop</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POP-UP MODAL VOOR OVER MIJ -->
+    <div class="modal-overlay" id="about-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-about-modal" aria-label="Sluit pop-up">&times;</button>
+            <div class="modal-tag">Over Mij</div>
+            <h2 class="modal-title">Hallo, ik ben Natalia!</h2>
+            
+            <!-- FOTO SLIDER VOOR OVER MIJ -->
+            <div class="modal-slider">
+                <button class="slider-btn prev-btn" id="about-prev" aria-label="Vorige foto">&#10094;</button>
+                <div class="modal-media-wrapper">
+                    <img id="about-modal-img" src="img/natalia.jpg" alt="Natalia foto">
+                </div>
+                <button class="slider-btn next-btn" id="about-next" aria-label="Volgende foto">&#10095;</button>
+                <div class="slider-counter" id="about-slider-counter">1 / 1</div>
+            </div>
+
+            <div class="modal-body">
+                <p>Leuk dat je een kijkje neemt op mijn portfolio! Ik ben student Mediavormgeven aan het Grafisch Lyceum Rotterdam met een grote passie voor visuele identiteiten, grafisch ontwerp en digitaal design.</p>
+                <br>
+                <p>Naast mijn studie hou ik ervan om te experimenteren met nieuwe stijlen, concepten uit te werken in Figma en illustraties te maken.</p>
+                <div class="tools-container">
+                    <strong>✨ Vaardigheden &amp; Interesses:</strong>
+                    <span>Mediavormgeving, UI/UX Design, Typografie, Adobe Illustrator &amp; Photoshop</span>
                 </div>
             </div>
         </div>

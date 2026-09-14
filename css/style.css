@@ -3,15 +3,15 @@
    ========================================================================== */
 
 :root {
-    --bg-dark: #330000;          /* Achtergrondkleur ingesteld op #330000 */
-    --bg-card: #240000;          /* Iets donkerdere bordeaux voor kaarten */
-    --bg-modal: #2a0202;         /* Modal achtergrond */
-    --bordeaux-accent: #5e0b12;  /* Accent rood */
-    --bloody-rose: #8A0B18;      /* Crimson / Rose rood */
+    --bg-dark: #330000;          
+    --bg-card: #240000;          
+    --bg-modal: #2a0202;         
+    --bordeaux-accent: #5e0b12;  
+    --bloody-rose: #8A0B18;      
     --bloody-rose-bright: #c92437;
-    --text-light: #F4EAE1;       /* Vintage zacht crème */
-    --text-muted: #D3B8BC;       /* Warm roze-grijs */
-    --accent-gold: #E5C17C;       /* Vintage goud accent */
+    --text-light: #F4EAE1;       
+    --text-muted: #D3B8BC;       
+    --accent-gold: #E5C17C;       
     --border-color: rgba(229, 193, 124, 0.25);
     
     --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -25,7 +25,7 @@
 }
 
 body {
-    background-color: var(--bg-dark); /* #330000 */
+    background-color: var(--bg-dark);
     color: var(--text-light);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -50,7 +50,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(51, 0, 0, 0.92); /* #330000 met transparantie */
+    background-color: rgba(51, 0, 0, 0.92);
 }
 
 .logo {
@@ -74,7 +74,7 @@ a {
     font-weight: 500;
 }
 
-/* Hero Sectie met Profielfoto */
+/* Hero Sectie met Profielfoto & Wolkje */
 .hero {
     padding: 4rem 6% 3.5rem 6%;
     max-width: 1100px;
@@ -91,6 +91,7 @@ a {
 .hero-image-wrapper {
     flex-shrink: 0;
     position: relative;
+    cursor: pointer;
 }
 
 .profile-img {
@@ -106,6 +107,42 @@ a {
 .profile-img:hover {
     transform: scale(1.04) rotate(-1deg);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(225, 193, 124, 0.4);
+}
+
+/* Klik op mij - Speech Bubble */
+.speech-bubble {
+    position: absolute;
+    top: -12px;
+    right: -15px;
+    background: var(--accent-gold);
+    color: #240000;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 0.4rem 0.85rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    animation: floatBubble 2.5s infinite ease-in-out;
+    z-index: 10;
+    user-select: none;
+    pointer-events: none;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 18px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid var(--accent-gold);
+}
+
+@keyframes floatBubble {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
 }
 
 .hero-text {
@@ -292,7 +329,6 @@ a {
     padding: 1.5rem;
 }
 
-/* Show class for Modal */
 .modal-overlay.show {
     opacity: 1;
     pointer-events: all;
@@ -349,13 +385,80 @@ a {
     margin: 0.3rem 0 1.2rem 0;
 }
 
-.modal-img {
+/* Media Slider & Video Styling */
+.modal-slider {
+    position: relative;
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
     margin-bottom: 1.5rem;
+}
+
+.modal-media-wrapper {
+    width: 100%;
+    height: 400px;
+    background-color: #1a0000;
+    border-radius: 8px;
     border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-media-wrapper img,
+.modal-media-wrapper video,
+.modal-media-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(36, 0, 0, 0.85);
+    color: var(--accent-gold);
+    border: 1px solid var(--accent-gold);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    z-index: 5;
+    user-select: none;
+}
+
+.slider-btn:hover {
+    background: var(--bloody-rose-bright);
+    color: #fff;
+    box-shadow: 0 0 12px rgba(201, 36, 55, 0.6);
+}
+
+.prev-btn { left: 12px; }
+.next-btn { right: 12px; }
+
+.slider-counter {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(36, 0, 0, 0.85);
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.slider-btn.hidden,
+.slider-counter.hidden {
+    display: none !important;
 }
 
 .modal-body {
