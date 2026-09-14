@@ -3,233 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalia | Portfolio</title>
+    <title>Natalia — Mediavormgever Portfolio</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Vintage Serif & Strakke Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- CSS Bestand -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header / Navigatie -->
+    <!-- HEADER / NAVIGATIE -->
     <header class="navbar">
-        <div class="logo">NATALIA <span>PORTFOLIO</span></div>
+        <div class="logo">Natalia<span>.</span></div>
+        
+        <!-- Navigatie Knoppen -->
         <nav class="nav-links">
-            <a href="#portfolio">Projecten</a>
+            <a href="#projects">Projecten</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="tagline">Cozy Vintage Style</div>
+
+        <div class="tagline">Mediavormgeven &bull; GLR</div>
     </header>
 
-    <!-- Hero / Voorpagina Sectie -->
+    <!-- HERO SECTIE MET PROFIELFOTO & WOLKJE -->
     <section class="hero">
         <div class="hero-container">
-            <div class="hero-image-wrapper">
-                <div class="speech-bubble">Welkom! 👋</div>
-                <img src="https://via.placeholder.com/310" alt="Natalia Scisla" class="profile-img">
+            <!-- Profielfoto met Wolkje -->
+            <div class="hero-image-wrapper" id="profile-trigger">
+                <img src="img/natalia.jpg" alt="Natalia — Mediavormgever" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+                <div class="speech-bubble">Klik op mij! ✨</div>
             </div>
+
+            <!-- Introductie Tekst -->
             <div class="hero-text">
-                <div class="hero-subtitle">Welkom op de portfolio van</div>
-                <h1>Natalia <span class="highlight">Scisla</span></h1>
-                <p>Creatieve maker met een passie voor design, media en originele concepten. Bekijk hieronder mijn meest recente werk en projecten.</p>
-                <div class="badge">✨ Beschikbaar voor nieuwe projecten</div>
+                <div class="hero-subtitle">Mijn Portfolio</div>
+                <h1>Mijn <span class="highlight">portfolio</span></h1>
+                <p>Ik ben Natalia, student Mediavormgeven aan het Grafisch Lyceum Rotterdam. Ik breng verhalen tot leven met sterke typografie, rijke visuele identiteiten en doordacht digitaal &amp; print ontwerp.</p>
+                <div class="badge">📍 Grafisch Lyceum Rotterdam</div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Grid Sectie -->
-    <section id="portfolio" class="portfolio-section">
+    <!-- PORTFOLIO GRID -->
+    <main class="portfolio-section" id="projects">
         <div class="section-title">
-            <h2>Mijn Projecten</h2>
-            <span class="subtitle-hint">Klik op een project voor details</span>
+            <h2>Selectie van Projecten</h2>
+            <p class="subtitle-hint">Klik op een project voor meer details &amp; tools</p>
         </div>
+        
+        <!-- dynamic project cards -->
+        <div class="grid" id="projects-grid"></div>
+    </main>
 
-        <div class="grid">
-            <!-- Project Card 1 -->
-            <article class="project-card">
-                <div class="card-img-wrapper">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 1 preview">
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">Branding & Graphic Design</span>
-                    <h3 class="card-title">Project Titel Een</h3>
-                    <p class="card-desc">Een korte omschrijving van dit creatieve project, de stappen die zijn genomen en het uiteindelijke resultaat.</p>
-                    <button class="open-modal-btn" onclick="openModal('project1')">Bekijk Project</button>
-                </div>
-            </article>
-
-            <!-- Project Card 2 -->
-            <article class="project-card">
-                <div class="card-img-wrapper">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 2 preview">
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">UI/UX & Web Design</span>
-                    <h3 class="card-title">Project Titel Twee</h3>
-                    <p class="card-desc">Een moderne interface ontworpen met oog voor detail, typografie en gebruikerservaring.</p>
-                    <button class="open-modal-btn" onclick="openModal('project2')">Bekijk Project</button>
-                </div>
-            </article>
-
-            <!-- Project Card 3 -->
-            <article class="project-card">
-                <div class="card-img-wrapper">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 3 preview">
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">Media & Content</span>
-                    <h3 class="card-title">Project Titel Drie</h3>
-                    <p class="card-desc">Visuele contentcreatie inclusief fotografie en videobewerking voor digitale campagnes.</p>
-                    <button class="open-modal-btn" onclick="openModal('project3')">Bekijk Project</button>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact Sectie -->
-    <section id="contact" class="contact-section">
+    <!-- CONTACT SECTIE -->
+    <section class="contact-section" id="contact">
         <div class="section-title">
-            <h2>Contact</h2>
+            <h2>Contact & Locatie</h2>
+            <p class="subtitle-hint">Stuur een berichtje of kom langs!</p>
         </div>
 
         <div class="contact-cards-container">
-            <!-- E-mail Card -->
+            <!-- E-mail Kaart -->
             <div class="contact-card">
                 <div class="contact-icon">✉️</div>
-                <h3>E-mail</h3>
-                <p>Stuur mij gerust een berichtje!</p>
-                <a href="mailto:natalkascisla0@gmail.com" class="contact-link">natalkascisla0@gmail.com</a>
+                <h3>E-mailadres</h3>
+                <p>Wil je samenwerken of heb je een vraag? Stuur gerust een mailtje!</p>
+                <a href="mailto:12345@student.glr.nl" class="contact-link">12345@student.glr.nl</a>
             </div>
 
-            <!-- LinkedIn Card -->
+            <!-- Locatie / School Kaart -->
             <div class="contact-card">
-                <div class="contact-icon">💼</div>
-                <h3>LinkedIn</h3>
-                <p>Connect met mij op LinkedIn</p>
-                <a href="https://www.linkedin.com/in/natalia-7b35142a2" target="_blank" rel="noopener noreferrer" class="contact-link">Bekijk profiel</a>
+                <div class="contact-icon">🏫</div>
+                <h3>Mijn School</h3>
+                <p>Ik volg de opleiding Mediavormgeven aan het:</p>
+                <p class="school-name"><strong>Grafisch Lyceum Rotterdam</strong></p>
+                <address class="school-address">
+                    Heer Bokelweg 258<br>
+                    3032 AD Rotterdam<br>
+                    Nederland
+                </address>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Natalia Scisla. Alle rechten voorbehouden.</p>
+        <p>&copy; <span id="year">2026</span> Natalia &mdash; Mediavormgever Grafisch Lyceum Rotterdam</p>
     </footer>
 
-    <!-- Pop-up Modal voor Projecten -->
-    <div class="modal-overlay" id="projectModal" onclick="closeModalOutside(event)">
+    <!-- POP-UP MODAL VOOR PROJECT DETAILS -->
+    <div class="modal-overlay" id="project-modal">
         <div class="modal-content">
-            <button class="close-btn" onclick="closeModal()">&times;</button>
-            <span class="modal-tag" id="modalTag">Categorie</span>
-            <h2 class="modal-title" id="modalTitle">Project Titel</h2>
+            <button class="close-btn" aria-label="Sluit pop-up">&times;</button>
+            <div class="modal-tag" id="modal-category">Categorie</div>
+            <h2 class="modal-title" id="modal-title">Project Titel</h2>
             
+            <!-- MEDIA SLIDER WRAPPER (FOTO'S & VIDEO'S) -->
             <div class="modal-slider">
-                <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
-                <div class="modal-media-wrapper" id="modalMedia">
-                    <!-- Media komt hier dynamisch te staan via JavaScript -->
+                <button class="slider-btn prev-btn" id="slider-prev" aria-label="Vorige media">&#10094;</button>
+                <div class="modal-media-wrapper" id="modal-media-container"></div>
+                <button class="slider-btn next-btn" id="slider-next" aria-label="Volgende media">&#10095;</button>
+                <div class="slider-counter" id="slider-counter">1 / 1</div>
+            </div>
+
+            <div class="modal-body">
+                <p id="modal-desc">Project omschrijving...</p>
+                <div class="tools-container">
+                    <strong>🛠️ Gebruikte Tools:</strong>
+                    <span id="modal-tools">Figma, Photoshop</span>
                 </div>
-                <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
-                <div class="slider-counter" id="sliderCounter">1 / 1</div>
-            </div>
-
-            <div class="modal-body" id="modalBody">
-                <!-- Uitgebreide beschrijving komt hier -->
-            </div>
-
-            <div class="tools-container" id="modalTools">
-                <strong>Gebruikte tools:</strong> <span id="toolsList">Figma, Photoshop, Illustrator</span>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript voor de Pop-up Modal functionaliteit -->
-    <script>
-        const projectData = {
-            'project1': {
-                tag: 'Branding & Graphic Design',
-                title: 'Project Titel Een',
-                images: ['https://via.placeholder.com/800x500/5e0b12/ffffff?text=Afbeelding+1', 'https://via.placeholder.com/800x500/240000/ffffff?text=Afbeelding+2'],
-                body: 'Dit is de volledige beschrijving van het eerste project. Hier kun je uitgebreid toelichten wat het doel was, het proces en de behaalde resultaten.',
-                tools: 'Photoshop, Illustrator, Indesign'
-            },
-            'project2': {
-                tag: 'UI/UX & Web Design',
-                title: 'Project Titel Twee',
-                images: ['https://via.placeholder.com/800x500/330000/ffffff?text=Design+Overview'],
-                body: 'Hier beschrijf je het UI/UX ontwerpproces, de wireframes, prototypes en de uiteindelijke gebruikerservaring.',
-                tools: 'Figma, HTML, CSS'
-            },
-            'project3': {
-                tag: 'Media & Content',
-                title: 'Project Titel Drie',
-                images: ['https://via.placeholder.com/800x500/8A0B18/ffffff?text=Video+of+Foto+1'],
-                body: 'Informatie over de gemaakte visuele content, videobeelden of fotocreaties voor dit specifieke project.',
-                tools: 'Premiere Pro, Lightroom'
-            }
-        };
-
-        let currentSlide = 0;
-        let currentImages = [];
-
-        function openModal(projectId) {
-            const data = projectData[projectId];
-            if (!data) return;
-
-            document.getElementById('modalTag').innerText = data.tag;
-            document.getElementById('modalTitle').innerText = data.title;
-            document.getElementById('modalBody').innerText = data.body;
-            document.getElementById('toolsList').innerText = data.tools;
-
-            currentImages = data.images;
-            currentSlide = 0;
-            updateSlide();
-
-            document.getElementById('projectModal').classList.add('show');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('projectModal').classList.remove('show');
-            document.body.style.overflow = 'auto';
-        }
-
-        function closeModalOutside(e) {
-            if (e.target.classList.contains('modal-overlay')) {
-                closeModal();
-            }
-        }
-
-        function changeSlide(direction) {
-            currentSlide += direction;
-            if (currentSlide < 0) currentSlide = currentImages.length - 1;
-            if (currentSlide >= currentImages.length) currentSlide = 0;
-            updateSlide();
-        }
-
-        function updateSlide() {
-            const mediaWrapper = document.getElementById('modalMedia');
-            mediaWrapper.innerHTML = `<img src="${currentImages[currentSlide]}" alt="Project media">`;
+    <!-- POP-UP MODAL VOOR OVER MIJ -->
+    <div class="modal-overlay" id="about-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-about-modal" aria-label="Sluit pop-up">&times;</button>
+            <div class="modal-tag">Over Mij</div>
+            <h2 class="modal-title">Hallo, ik ben Natalia!</h2>
             
-            const counter = document.getElementById('sliderCounter');
-            counter.innerText = `${currentSlide + 1} / ${currentImages.length}`;
+            <!-- FOTO SLIDER VOOR OVER MIJ -->
+            <div class="modal-slider">
+                <button class="slider-btn prev-btn" id="about-prev" aria-label="Vorige foto">&#10094;</button>
+                <div class="modal-media-wrapper">
+                    <img id="about-modal-img" src="img/natalia.jpg" alt="Natalia foto">
+                </div>
+                <button class="slider-btn next-btn" id="about-next" aria-label="Volgende foto">&#10095;</button>
+                <div class="slider-counter" id="about-slider-counter">1 / 1</div>
+            </div>
 
-            const prevBtn = document.querySelector('.prev-btn');
-            const nextBtn = document.querySelector('.next-btn');
+            <div class="modal-body">
+                <p>Leuk dat je een kijkje neemt op mijn portfolio! Ik ben student Mediavormgeven aan het Grafisch Lyceum Rotterdam met een grote passie voor visuele identiteiten, grafisch ontwerp en digitaal design.</p>
+                <br>
+                <p>Naast mijn studie hou ik ervan om te experimenteren met nieuwe stijlen, concepten uit te werken in Figma en illustraties te maken.</p>
+                <div class="tools-container">
+                    <strong>✨ Vaardigheden &amp; Interesses:</strong>
+                    <span>Mediavormgeving, UI/UX Design, Typografie, Adobe Illustrator &amp; Photoshop</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            if (currentImages.length <= 1) {
-                prevBtn.classList.add('hidden');
-                nextBtn.classList.add('hidden');
-                counter.classList.add('hidden');
-            } else {
-                prevBtn.classList.remove('hidden');
-                nextBtn.classList.remove('hidden');
-                counter.classList.remove('hidden');
-            }
-        }
-    </script>
+    <!-- JavaScript Data & Functionaliteit -->
+    <script src="js/script.js"></script>
 </body>
 </html>
