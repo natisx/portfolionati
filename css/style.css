@@ -28,7 +28,7 @@ html {
     padding: 0;
 }
 
-/* CUSTOM CURSORS (Ingebouwde Base64 van jouw cursor afbeelding) */
+/* CUSTOM CURSORS */
 body {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -42,7 +42,7 @@ body {
 
 /* Pointer cursor voor klikbare elementen */
 a, button, .profile-img, .close-btn, .slider-btn, .open-modal-btn, .hero-image-wrapper {
-    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAKAElEQVR4nL1Ya4xV1RX+1t777H3ui5lhhpcyzKCMMFQEXyAUOyhKoLUpmg6mvkptpRlqNZTER2xyvdGkVqKp0bTSGE1saRqnlsZobSORTJrUJxRRGIkKCiMyD5hxhpl7596z1+qP+2AGR2Pa6EpOTvY65+z97W99a+29DzCBtba2agBYs2bN5gsvuCB78UUX9V5/7bWrACCdTquJvvkqjQBg69atVfPmzTteX18vsxoaZH5zc9eGDRuqSs/pqxp8otkSADz//POToyiqMsZAK1XIjY6e+Z9du9oASEtLi/46AQEAurq62HvvS03NzJLN5W5987nn4h0dHR5fEUufAZROpwEAS5cuhbWWRASlwWU0nz/zl48+uhyAtLa2fiVa+kynmUxGAGD16tW9iqi35BYiYmaW4ZGR7wBAT0/P18MQAAFAa9euHQmC4EMiqviYmQYHB89VSqGjo4O/LkBAUTNIJhJ7xgBSIgIWafIffBAC4FIJ0CiGVKVP6y+dTqvW1lZdLiP/s7W0tBgAuOKyy9Y1NTVJY2NxYfbs2dzY2Cjz5s7NbdiwYVblZSJorQFVwUKn3U/3f6FNyNCKFSsYABrPPnuPUiqCiFYAjAgbZtf98cdnAcA9mzc3fHvZsvZLmppeX3X++f9Yd9VVFwCQEnNyX1tb/aa1a1vuuuGGJaS1fBlgn/ewGCeRYNHChfuGP/10jiFiMLMLAlM/c+Ytz3d0PLF66dJff3rs2B1RFCEQQSyROLJ+48Zzb7z99qEfX375FX2HDz/L3qcsgMTkyX+67c03119E5AWQdYCaD8h+gNqBcnmB+RxAAsAQUX75xRe/HBHNERFWAIz34ELhLABQhUKN9t5rIIKIDqKofv+uXY0A9mb7+3+IkZEUiYxGzIa9v+7Pq1c/BuAVKkbGgwgQGTewAoprV0tLiymJjwCgpaUFAFCVSr0UKgXLTA5AwAzOZhsAUHU8zg7QVkSHIsp6j+ETJ6aICGFkpNmKSEhkYkTimNnkcnMA4KGHHnK/aG5+8o6ZM1/esnr198cCMgBUe3u7H+tMAworVnBHRwcWLFy4Z+DIkUIhnw80UWREoPL5egASD8OcEwEzQ4mIY8ZId/ckZa3cNHv2mfCetFJKiXjnveKhodo0oIba26+LDwz8qJDLYfD995cA+EuFISLi66+++pJLzz//1u+uXPk9bQwyAO/PZAgAfvXww4diWh+0AAIRWGZQLjfrkEjYe/DgkGOGAxAC4rxHyrkFTz74YLXOZhMhAMeMUAQxZsSVqs8Yw3L8+LUqn/cGGA1GRuLjxLtq+fJbTvT0/J7zeRgiJJPJf59z3nk3P75t24H58+fb/Z2d+asXLnz2ZF/fNSQSRCoAP035HxQ35HxQyEBkEQTFFgET2183/8w1bJvH77011d1p5/3tMxA5A1bW3uD5h1987n7t30qN+7/1tSvf//53t7b993v/62t1q7v1t59e/u1z126tve+u+W55y/745//eX9/y/f1tbvvvd9/ePj51/v/3/8d9981gX+aGf/Lz6/v9f27/t/X4yD1t7e/f45//f1v6///2/t0B58Z39/fvz//b/+3//3/9u///8z//8z/+3//8/z/") 8 0, pointer;
+    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAKAElEQVR4nL1Ya4xV1RX+1t777H3ui5lhhpcyzKCMMFQEXyAUOyhKoLUpmg6mvkptpRlqNZTER2xyvdGkVqKp0bTSGE1saRqnlsZobSORTJrUJxRRGIkKCiMyD5hxhpl7596z1+qP+2AGR2Pa6EpOTvY65+z97W99a+29DzCBtba2agBYs2bN5gsvuCB78UUX9V5/7bWrACCdTquJvvkqjQBg69atVfPmzTteX18vsxoaZH5zc9eGDRuqSs/pqxp8otkSADz//POToyiqMsZAK1XIjY6e+Z9du9oASEtLi/46AQEAurq62HvvS03NzJLN5W5987nn4h0dHR5fEUufAZROpwEAS5cuhbWWRASlwWU0nz/zl48+uhyAtLa2fiVa+kynmUxGAGD16tW9iqi35BYiYmaW4ZGR7wBAT0/P18MQAAFAa9euHQmC4EMiqviYmQYHB89VSqGjo4O/LkBAUTNIJhJ7xgBSIgIWafIffBAC4FIJ0CiGVKVP6y+dTqvW1lZdLiP/s7W0tBgAuOKyy9Y1NTVJY2NxYfbs2dzY2Cjz5s7NbdiwYVblZSJorQFVwUKn3U/3f6FNyNCKFSsYABrPPnuPUiqCiFYAjAgbZtf98cdnAcA9mzc3fHvZsvZLmppeX3X++f9Yd9VVFwCQEnNyX1tb/aa1a1vuuuGGJaS1fBlgn/ewGCeRYNHChfuGP/10jiFiMLMLAlM/c+Ytz3d0PLF66dJff3rs2B1RFCEQQSyROLJ+48Zzb7z99qEfX375FX2HDz/L3qcsgMTkyX+67c03119E5AWQdYCaD8h+gNqBcnmB+RxAAsAQUX75xRe/HBHNERFWAIz34ELhLABQhUKN9t5rIIKIDqKofv+uXY0A9mb7+3+IkZEUiYxGzIa9v+7Pq1c/BuAVKkbGgwgQGTewAoprV0tLiymJjwCgpaUFAFCVSr0UKgXLTA5AwAzOZhsAUHU8zg7QVkSHIsp6j+ETJ6aICGFkpNmKSEhkYkTimNnkcnMA4KGHHnK/aG5+8o6ZM1/esnr198cCMgBUe3u7H+tMAworVnBHRwcWLFy4Z+DIkUIhnw80UWREoPL5egASD8OcEwEzQ4mIY8ZId/ckZa3cNHv2mfCetFJKiXjnveKhodo0oIba26+LDwz8qJDLYfD995cA+EuFISLi66+++JLzz//1u+uXPk9bQwyAO/PZAgAfvXww4diWh+0AAIRWGZQLjfrkEjYe/DgkGOGAxAC4rxHyrkFTz74YLXOZhMhAMeMUAQxZsSVqs8Yw3L8+LUqn/cGGA1GRuLjxLtq+fJbTvT0/J7zeRgiJJPJf59z3nk3P75t24H58+fb/Z2d+asXLnz2ZF/fNSQSRCoAP035HxQ35HxQyEBkEQTFFgET2183/8w1bJvH77011d1p5/3tMxA5A1bW3uD5h1987n7t30qN+7/1tSvf//53t7b993v/62t1q7v1t59e/u1z126tve+u+W55y/745//eX9/y/f1tbvvvd9/ePj51/v/3/8d9981gX+aGf/Lz6/v9f27/t/X4yD1t7e/f45//f1v6///2/t0B58Z39/fvz//b/+3//3/9u///8z//8z/+3//8/z/") 8 0, pointer !important;
 }
 
 a {
@@ -77,7 +77,6 @@ a {
     font-style: italic;
 }
 
-/* Navigatie links in header */
 .nav-links {
     display: flex;
     gap: 2.2rem;
@@ -121,9 +120,13 @@ a {
     font-weight: 500;
 }
 
-/* Hero Sectie met Profielfoto & Wolkje */
+/* Hero Sectie (Nu volledig schermvullend) */
 .hero {
-    padding: 4rem 6% 3.5rem 6%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 6%;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -133,6 +136,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 3.5rem;
+    width: 100%;
 }
 
 .hero-image-wrapper {
@@ -155,7 +159,6 @@ a {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(225, 193, 124, 0.4);
 }
 
-/* Klik op mij - Speech Bubble */
 .speech-bubble {
     position: absolute;
     top: -12px;
@@ -237,7 +240,7 @@ a {
 
 /* Portfolio Grid */
 .portfolio-section {
-    padding: 3rem 6% 4rem 6%;
+    padding: 5rem 6% 4rem 6%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -622,6 +625,10 @@ footer {
     }
     .tagline { 
         display: none; 
+    }
+    .hero {
+        min-height: auto;
+        padding: 4rem 6%;
     }
     .hero-container {
         flex-direction: column;
