@@ -13,11 +13,11 @@ const projectsData = {
         tools: "Figma, Adobe Photoshop, Canva"
     },
     "2": {
-        title: "project2",
-        category: "project2",
+        title: "van 2d naar 3d",
+        category: "ruimtelijk vormgeving",
         image: "img/domifoto.jpg",
-        description: "project2",
-        tools: "project2"
+        description: "dit is een procesboek van een project waar ik een patroon kreeg toegewezen en moest daarvan iets nieuws creeeren en naar 3d omzetten",
+        tools: "procreate"
     },
     "3": {
         title: "project3",
