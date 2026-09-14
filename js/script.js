@@ -15,7 +15,7 @@ const projectsData = {
     "2": {
         title: "van 2d naar 3d",
         category: "ruimtelijk vormgeving",
-        image: "img/domifoto.jpg",
+        image: "img/procesboek.jpg",
         description: "dit is een procesboek van een project waar ik een patroon kreeg toegewezen en moest daarvan iets nieuws creeeren en naar 3d omzetten",
         tools: "procreate"
     },
