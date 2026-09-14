@@ -1,0 +1,30 @@
+========================================================================
+🌹 HANDLEIDING: NATALIA'S PORTFOLIO WEBSITE (GLR MEDIAVORMGEVEN) 🌹
+========================================================================
+
+In deze ZIP-map vind je de bijgewerkte bestanden voor jouw portfolio website met de nieuwe `projectsData` & pop-up logica!
+
+------------------------------------------------------------------------
+📁 MAPSTRUCTUUR
+------------------------------------------------------------------------
+- index.html              -> De hoofd-pagina van de website
+- css/
+    └── style.css         -> Alle opmaak, bordeaux/bloody rose/zwart stijlen
+- js/
+    └── script.js         -> De vernieuwde `projectsData` & pop-up logica
+- img/                 -> Map waar je foto's in opslaat (zoals pearup.jpg)
+
+------------------------------------------------------------------------
+✏️ HOE VOEG JE PROJECTEN TOE IN script.js?
+------------------------------------------------------------------------
+Open 'js/script.js' en voeg simpelweg een nieuw nummer toe aan `projectsData`:
+
+"5": {
+    title: "Nieuwe Opdracht",
+    category: "Mediavormgeving",
+    image: "img/mijnfoto.jpg",
+    description: "Omschrijving van het project...",
+    tools: "Figma, Illustrator"
+}
+
+Veel succes! 🎨✨

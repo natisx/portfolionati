@@ -1,0 +1,22 @@
+========================================================================
+🌹 HANDLEIDING: NATALIA PORTFOLIO WEBSITE (BACKGROUND: #330000) 🌹
+========================================================================
+
+In deze ZIP-map vind je de complete website met de nieuwe achtergrondkleur (#330000) en de toegevoegde profielfoto in de Hero-sectie!
+
+------------------------------------------------------------------------
+📁 MAPSTRUCTUUR
+------------------------------------------------------------------------
+- index.html              -> De hoofd-pagina met profielfoto & hero-sectie
+- css/
+    └── style.css         -> Ingesteld op achtergrondkleur #330000 met vintage gouden details
+- js/
+    └── script.js         -> Jouw projecten-data & pop-up modal functionaliteit
+- img/                    -> Map voor je foto's (bijv. domifoto.jpg & pearup.jpg)
+
+------------------------------------------------------------------------
+📸 PROFIELFOTO INSTELLEN
+------------------------------------------------------------------------
+Plaats jouw foto in de `img` map met de naam `domifoto.jpg`. Als de foto niet gevonden wordt, wordt er automatisch een nette placeholder getoond.
+
+Veel succes! 🎨✨
