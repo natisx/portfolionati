@@ -18,6 +18,13 @@
     <!-- HEADER / NAVIGATIE -->
     <header class="navbar">
         <div class="logo">Natalia<span>.</span></div>
+        
+        <!-- Navigatie Knoppen -->
+        <nav class="nav-links">
+            <a href="#projects">Projecten</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
         <div class="tagline">Mediavormgeven &bull; GLR</div>
     </header>
 
@@ -33,7 +40,7 @@
             <!-- Introductie Tekst -->
             <div class="hero-text">
                 <div class="hero-subtitle">Mijn Portfolio</div>
-                <h1>Mijn <span class="highlight">portfolio</span> 
+                <h1>Mijn <span class="highlight">portfolio</span></h1>
                 <p>Ik ben Natalia, student Mediavormgeven aan het Grafisch Lyceum Rotterdam. Ik breng verhalen tot leven met sterke typografie, rijke visuele identiteiten en doordacht digitaal &amp; print ontwerp.</p>
                 <div class="badge">📍 Grafisch Lyceum Rotterdam</div>
             </div>
@@ -41,7 +48,7 @@
     </section>
 
     <!-- PORTFOLIO GRID -->
-    <main class="portfolio-section">
+    <main class="portfolio-section" id="projects">
         <div class="section-title">
             <h2>Selectie van Projecten</h2>
             <p class="subtitle-hint">Klik op een project voor meer details &amp; tools</p>
@@ -50,6 +57,37 @@
         <!-- dynamic project cards -->
         <div class="grid" id="projects-grid"></div>
     </main>
+
+    <!-- CONTACT SECTIE -->
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <h2>Contact & Locatie</h2>
+            <p class="subtitle-hint">Stuur een berichtje of kom langs!</p>
+        </div>
+
+        <div class="contact-cards-container">
+            <!-- E-mail Kaart -->
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>E-mailadres</h3>
+                <p>Wil je samenwerken of heb je een vraag? Stuur gerust een mailtje!</p>
+                <a href="mailto:12345@student.glr.nl" class="contact-link">12345@student.glr.nl</a>
+            </div>
+
+            <!-- Locatie / School Kaart -->
+            <div class="contact-card">
+                <div class="contact-icon">🏫</div>
+                <h3>Mijn School</h3>
+                <p>Ik volg de opleiding Mediavormgeven aan het:</p>
+                <p class="school-name"><strong>Grafisch Lyceum Rotterdam</strong></p>
+                <address class="school-address">
+                    Heer Bokelweg 258<br>
+                    3032 AD Rotterdam<br>
+                    Nederland
+                </address>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
